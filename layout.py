@@ -2,8 +2,8 @@
 #  layout.py
 #  AutoMegaPack
 #
-#  Created by David Ionita on 8/23/20.
-#  Copyright © 2020 David Ionita. All rights reserved.
+#  Created by CoollDave#0627 on 8/23/20.
+#  Copyright (c) 2020 CoollDave#0627. All rights reserved.
 #
 #  Discord: CoollDave#0627
 #
@@ -14,9 +14,9 @@ start = '{ "content": [\n'
 middle = ''
 end = '\n]}'
 
-rootdir = "C:/Users/David/Desktop/AutoMegaPack"
-basedir = "C:/Users/David/Desktop/AutoMegaPack/Base Files"
-submdir = "C:/Users/David/Desktop/AutoMegaPack/Submissions"
+rootdir = os.path.dirname(os.path.abspath(__file__))
+basedir = rootdir + "/Base Files"
+submdir = rootdir + "/Submissions"
 
 baseLayout = open(basedir + "/layout.json", "r")
 baseData = baseLayout.read()
@@ -27,7 +27,7 @@ for subdir, dirs, files in os.walk(submdir):
 
     # iterate each livery submission folder in root
     for dir in dirs:
-        submLayout = open(submdir + "/" + dir + "/layouts.json", "r")
+        submLayout = open(submdir + "/" + dir + "/layout.json", "r")
         submData = submLayout.read()
         middle += ", \n" + submData
 

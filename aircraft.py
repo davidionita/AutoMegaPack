@@ -2,8 +2,8 @@
 #  aircraft.py
 #  AutoMegaPack
 #
-#  Created by David Ionita on 8/23/20.
-#  Copyright © 2020 David Ionita. All rights reserved.
+#  Created by CoollDave#0627 on 8/23/20.
+#  Copyright (c) 2020 CoollDave#0627. All rights reserved.
 #
 #  Discord: CoollDave#0627
 #
@@ -13,9 +13,9 @@ import re
 
 data = ''
 
-rootdir = "C:/Users/David/Desktop/AutoMegaPack"
-basedir = "C:/Users/David/Desktop/AutoMegaPack/Base Files"
-submdir = "C:/Users/David/Desktop/AutoMegaPack/Submissions"
+rootdir = os.path.dirname(os.path.abspath(__file__))
+basedir = rootdir + "/Base Files"
+submdir = rootdir + "/Submissions"
 
 baseAircraft = open(basedir + "/aircraft.cfg", "r")
 baseData = baseAircraft.read()
