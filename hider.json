@@ -1,0 +1,27 @@
+{
+  "Airbus A320 Neo Asobo": { 
+      "num": 0, 
+      "selected": true, 
+      "required": true 
+  },
+  "Airbus A320 Neo Asobo AirTraffic 00": {
+    "num": 1,
+    "selected": true,
+    "required": true
+  },
+  "Airbus A320 Neo Delta": {
+    "num": 2,
+    "selected": true,
+    "required": false
+  },
+  "Airbus A320 Neo British": {
+    "num": 3,
+    "selected": true,
+    "required": false
+  },
+  "Airbus A320 Neo TEMPLATE": { 
+      "num": 4, 
+      "selected": true, 
+      "required": false 
+    }
+}
